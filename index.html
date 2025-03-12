@@ -18,7 +18,13 @@
     <div class="container">
       <article class="feed">
         <header class="feed-header">
-          <div><i class="fa-brands fa-html5"></i></div>
+          <div class="nav-info">
+            <i class="fa-brands fa-html5"></i>
+            <div class="nav-title-area">
+              <p class="nav-title"><b>HTML5</b></p>
+              <p class="nav-desc">Rioberto</p>
+            </div>
+          </div>
           <nav class="nav-menu">
             <i class="fa-solid fa-ellipsis-vertical"></i>
           </nav>
@@ -63,16 +69,49 @@
         --black: #000;
       }
       .container {
-        border: 4px solid magenta;
+        /* border: 4px solid magenta; */
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
       }
 
       .feed-header {
+        border: 4px solid limegreen;
         background-color: #f5f5f5;
-        border-bottom: 1px solid #e7e7e7;
-        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .nav-info {
+        font-size: 20px;
+        padding-left: 10px;
+        width: 200px;
+        /* border: 1px solid purple; */
+        background: bisque;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-title-area {
+        margin-left: 10px;
+        font-size: 15px;
+        /* border: 1px solid greenyellow; */
+      }
+
+      .nav-title {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .feed-image {
+        background-color: black;
+      }
+
+      .feed-image img {
+        width: 96%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       body {
@@ -89,9 +128,9 @@
         background-color: white;
       }
 
-      .reactions + .reactions-save {
+      /* .reactions + .reactions-save {
         border: 1px solid blue;
-      }
+      } */
 
       .reactions-save {
         margin-right: 15px;
@@ -99,11 +138,12 @@
 
       .post-stats {
         background-color: white;
-        padding: 2px 0 4px 0;
+        padding: 10px;
       }
 
       .feed-captions {
         background-color: white;
+        padding: 10px;
       }
     </style>
   </body>
